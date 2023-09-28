@@ -7,7 +7,7 @@ class ControladorPJ
     {
         $repo = new RepositorioPJ();
         $personaje = new Personaje($nombre_personaje, $raza, $clase, $nivel);
-        $id = $repo->guardado($personaje);
+        $id = $repo->guardar($personaje);
         if ($id === false) {
             return [ false, "Error al crear el personaje" ];
         } else {
