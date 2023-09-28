@@ -12,6 +12,7 @@ class ControladorPJ
             return [ false, "Error al crear el personaje" ];
         } else {
             $personaje->setId($id);
+            return [true, "El personaje se creó correctamente"]
         }
     }
 }
