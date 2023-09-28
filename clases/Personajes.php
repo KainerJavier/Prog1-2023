@@ -39,4 +39,19 @@ class Personajes
     {
         return $this->id;
     }
+
+    public function getRaza()
+    {
+        return $this->raza;
+    }
+
+    public function getClase()
+    {
+        return $this->clase;
+    }
+
+    public function getNivel()
+    {
+        return $this->nivel;
+    }
 }
