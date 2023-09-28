@@ -29,4 +29,14 @@ class Personajes
         $this->clase = $clase;
         $this->nivel = $nivel;
     }
+
+    public function setIdPJ($id)
+    {
+        $this->id = $id;
+    }
+
+    public function getIdPJ()
+    {
+        return $this->id;
+    }
 }
