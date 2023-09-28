@@ -2,13 +2,15 @@
 
 class Personajes
 {
+    protected $id;
     public $nombre_personaje;
     public $raza;
     public $clase;
     public $nivel;
 
-    public function __construct($nombre_personaje, $raza, $clase, $nivel)
+    public function __construct($nombre_personaje, $raza, $clase, $nivel, $id=null)
     {
+        $this->id = $id;
         $this->nombre_personaje = $nombre_personaje;
         $this->raza = $raza;
         $this->clase = $clase;
